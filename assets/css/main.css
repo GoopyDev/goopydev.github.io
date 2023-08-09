@@ -2096,6 +2096,8 @@ button:hover:active:after,
   width: 50%;
   border-top: solid 1px rgba(255, 255, 255, 0.15);
   position: relative;
+  background-color: darkred;
+  background-image: linear-gradient(to bottom, #00000050, transparent);
 }
 
 .features section:nth-child(-n + 2) {
@@ -2642,11 +2644,11 @@ input[type="radio"] + label:before {
 }
 
 .wrapper.style3 .icon.major:before {
-  color: #b74e91;
+  color: #006161;
 }
 
 .wrapper.style3-alt .icon.major:before {
-  color: #953d75;
+  color: #007777;
 }
 
 /* Image */
@@ -3117,7 +3119,7 @@ body.is-ie .spotlights > section {
   position: absolute;
   top: 0;
   width: 100%;
-  box-shadow: inset 0 0 20px 10px black;
+  box-shadow: inset 0 0 2px 5px black;
 }
 
 /* .spotlights > section > .image:after {
@@ -3292,11 +3294,13 @@ body.is-ie .spotlights > section {
 }
 
 .spotlights > section:nth-child(2) {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: teal;
+  background-image: linear-gradient(to bottom, #00000050, transparent);
 }
 
 .spotlights > section:nth-child(3) {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: teal;
+  background-image: linear-gradient(to bottom, #00000050, transparent);
 }
 
 .spotlights > section.inactive > .image:before,
@@ -3472,7 +3476,7 @@ table.alt tfoot {
 }
 
 .wrapper.style3 {
-  background-color: #b74e91;
+  background-color: #690000;
 }
 
 .wrapper.style3-alt {
@@ -4105,6 +4109,8 @@ body.is-preload #sidebar nav ul li {
     text-align: center;
     top: 0;
     width: 100%;
+    background-image: linear-gradient(115deg, black, rgb(0, 98, 95), black);
+    box-shadow: inset 0 0 30px 2px black;
   }
 
   #sidebar > .inner {
@@ -4135,6 +4141,8 @@ body.is-preload #sidebar nav ul li {
     line-height: inherit;
     margin: 0;
     background-color: #0009;
+    padding: 0 100vw;
+    justify-content: center;
   }
 
   #sidebar nav ul li {
