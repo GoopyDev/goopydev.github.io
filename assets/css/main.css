@@ -3781,6 +3781,91 @@ body.is-preload .wrapper.fade > .inner {
   }
 }
 
+.gameDevelopmentBanner {
+  box-shadow: inset 0px 0px 100px 70px #000000ee;
+  animation: verticalMotion 40s ease-in-out infinite;
+}
+
+@keyframes verticalMotion {
+  0% {
+    background-position: 0% 10%;
+  }
+  25% {
+    background-position: 100% 75%;
+  }
+  50% {
+    background-position: 0% 90%;
+  }
+  75% {
+    background-position: 100% 20%;
+  }
+  100% {
+    background-position: 0% 10%;
+  }
+}
+
+/* Game Development images */
+.gameDevelopmentImages {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10%;
+}
+
+.gameDevelopmentImages div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+}
+
+.gameDevelopmentImages img {
+  border-radius: 10px;
+  max-width: 98%;
+}
+
+.gameDevelopmentImages p {
+  margin: 0 0 10px 0;
+}
+
+.gameDevelopmentImagesBG {
+  background-image: linear-gradient(
+    45deg,
+    #ffb1,
+    #ffb5,
+    #ffb1,
+    #ffb1,
+    #ffb5,
+    #ffb1,
+    #ffb5,
+    #ffb1,
+    #ffb1,
+    #ffb5,
+    #ffb1,
+    #ffb5,
+    #ffb1,
+    #ffb1,
+    #ffb5,
+    #ffb1
+  );
+  animation: shine 10s ease-in-out alternate infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-size: 100%;
+    background-position: 0px 0px;
+  }
+  50% {
+    background-size: 130%;
+  }
+  100% {
+    background-size: 200%;
+    background-position: 100% 0px;
+  }
+}
+
 /* Sidebar */
 
 #sidebar {
