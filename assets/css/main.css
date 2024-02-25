@@ -4399,8 +4399,9 @@ body.is-preload #sidebar nav ul li {
   align-items: center;
   background-image: radial-gradient(#0005, black);
   border: 2px solid #673ab7;
+  /* max-height: 80vh; */
   width: 100%;
-  aspect-ratio: 16 / 7.7; /* Proporción de aspecto (ejemplo: 16:9) */
+  /* aspect-ratio: 16 / 7.7; /* Proporción de aspecto (ejemplo: 16:9) */
   overflow: hidden;
 }
 
@@ -4427,13 +4428,15 @@ body.is-preload #sidebar nav ul li {
 } */
 
 .controls {
-  margin-top: 10px;
+  margin: 10px auto auto auto;
   display: flex;
+  justify-content: center;
 }
 
 .prev-btn,
 .next-btn {
-  width: 160px;
+  width: 49%;
+  max-width: 160px;
 }
 
 .prev-symbol:before {
