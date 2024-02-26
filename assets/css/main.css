@@ -3877,6 +3877,7 @@ body.is-preload .wrapper.fade > .inner {
     blue,
     rgb(57, 0, 82)
   );
+  box-shadow: inset 0px 0px 0px 49px black;
   background-repeat: repeat;
   background-position: 50% 0%;
   cursor: default;
