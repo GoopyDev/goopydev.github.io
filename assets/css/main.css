@@ -4351,6 +4351,10 @@ body.is-preload #sidebar nav ul li {
   }
 }
 
+.noPaddingTop {
+  padding-top: 0px !important;
+}
+
 /* Styles for the project's image gallery */
 .gallery-container {
   display: flex;
