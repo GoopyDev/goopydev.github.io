@@ -1,7 +1,7 @@
 const gallery = document.querySelector(".gallery");
 const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
-const imagesList = gallery.querySelectorAll("img");
+const imagesList = gallery.querySelectorAll("img, video");
 let currentImageIndex = 0;
 console.log(gallery);
 console.log(prevBtn);
@@ -10,6 +10,13 @@ console.log(imagesList);
 
 function showImage(index) {
   imagesList.forEach((image, idx) => {
+    // Si es un video y está reproduciéndose, lo pausamos y lo reseteamos
+    if (image.tagName === "VIDEO") {
+      image.pause();
+      // console.log("Pausé la reprodución en curso");
+      // video.currentTime = 0 // Por si quisiéramos reiniciar el video al cambiar de img
+    }
+
     if (idx === index) {
       image.style.transform = "translateX(0)";
     } else {

@@ -4410,7 +4410,8 @@ body.is-preload #sidebar nav ul li {
   overflow: hidden;
 }
 
-.gallery img {
+.gallery img,
+video {
   position: absolute;
   width: auto;
   max-height: 100%;
