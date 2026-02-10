@@ -4364,7 +4364,8 @@ body.is-preload #sidebar nav ul li {
   text-align: center;
   padding: 20px;
   overflow: hidden;
-  /* height: 100vh; */
+  height: 100dvh;
+  height: 100vh;
   /* max-height: 77vh; */
 }
 
